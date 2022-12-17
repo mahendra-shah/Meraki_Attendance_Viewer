@@ -1,5 +1,5 @@
 window.addEventListener("message", (event) => {
-  console.log(event.data, "999999999999999999999999999999999");
+//   console.log(event.data, "999999999999999999999999999999999");
   if (event.origin != "https://meet.google.com") return;
   const data = JSON.parse(event.data);
   const localData = JSON.parse(localStorage.getItem("Meraki_Attendance_Data"));
@@ -17,7 +17,6 @@ const localRecords = JSON.parse(localStorage.getItem("Meraki_Attendance_Data"));
 const rev_record = localRecords.reverse()
 const tbody = document.getElementById("history");
 for (let record in rev_record) {
-  console.log(localRecords[record].PROFILE_URLS, "%%%%%%%%%%%%%%%%%%%%%%%%%%%%555");
   tbody.innerHTML += `
   <tr>
     <td>${localRecords[record].meeting_title}</td>
