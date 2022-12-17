@@ -147,5 +147,69 @@ h2 {
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
   background-color: #007bff;
-  opacity: .2;
-  border: 2px solid #007bff; }
+  opacity: 0.2;
+  border: 2px solid #007bff;
+}
+
+.veiw:hover {
+  background-color: #45d349;
+  color: white;
+}
+
+.veiw{
+  padding: 5px 15px 5px 15px;
+  border-radius: 6px;
+  color: black;
+  font-weight: 900;
+}
+.view {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+.table-heading tr th {
+  padding: 1rem !important;
+  border: 3px red;
+  background-color: #4caf50;
+}
+
+.table-tr tr td {
+  padding: 1rem;
+}
+
+.meraki-title img {
+  width: 2.5rem;
+  height: auto !important;
+}
+
+.meraki-title {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.dd{
+  height: 40rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.modal-header{
+  background-color: #8dd290;
+  padding: 0% !important;
+}
+
+.modal-header img{
+  width: 25px;
+}
+
+.modal-dialog{
+  width: 100rem !important;
+}
+
+.profile-img img{
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.modal-content{
+  margin-top: 5.5rem;
+}
