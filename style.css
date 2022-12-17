@@ -254,7 +254,7 @@ h2 {
 }
 
 .dd{
-  height: 700px;
+  height: 40rem;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -269,4 +269,13 @@ h2 {
 
 .modal-dialog{
   width: 100rem !important;
+}
+
+.profile-img img{
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.modal-content{
+  margin-top: 5.5rem;
 }

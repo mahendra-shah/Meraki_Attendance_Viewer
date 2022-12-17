@@ -42,13 +42,11 @@
               <th class="fw-bold">Title</th>
               <th class="fw-bold">Date</th>
               <th class="fw-bold">Duration</th>
-              <th class="fw-bold">Attenddees Count</th>
+              <th class="fw-bold ">Count</th>
               <th class="fw-bold">Attenddees</th>
               <th class="fw-bold"></th>
               <th></th>
-              <th></th>
             </tr>
-
             
           </table>
         </div>
@@ -65,27 +63,24 @@
               </div>
               <div class="dd">
                 <table id="tb" class="table table-fixed bg-white">
-                  <thead
+                  <thead id="remove-ele"
                   >
                     <tr style="width: 480px !important;top:0px"
                     class="position-sticky bg-white w-auto"
 >
-                      <th class="col-4">First Name</th>
-                      <th class="col-4">Last Name</th>
-                      <th class="col-4">E-mail</th>
+                      <th class="col-3">Profile</th>
+                      <th class="col-5">Name</th>
+                      <th class="col-4">Dueration</th>
                     </tr>
                   </thead>
                   <tbody class="mt-3 modal-class">
-                    <tr>
-                      <td class="col-xs-3">Bhupendra</td>
-                      <td class="col-xs-3">Deshmukh</td>
-                      <td class="col-xs-6">bhupendra</td>
-                    </tr>
+                    
                   </tbody>
                 </table>
               </div>
               <div class="modal-footer">
                 <button
+                onclick="clearData()"
                   type="button"
                   class="btn btn-danger"
                   data-bs-dismiss="modal"
