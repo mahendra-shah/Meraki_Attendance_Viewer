@@ -89,11 +89,10 @@ function clearData(){
   close = document.getElementById("tb")
   close.innerHTML = `
   <tr style="width: 480px !important;top:0px"
-  class="position-sticky bg-white w-auto"
-  >
-    <th class="col-4">First Name</th>
-    <th class="col-4">Last Name</th>
-    <th class="col-4">E-mail</th>
+     class="position-sticky bg-white w-auto">
+       <th class="col-3"></th>
+       <th class="col-5">Name</th>
+       <th class="col-4">Duration</th>
   </tr>
-        `
+    `
 }
