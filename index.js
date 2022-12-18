@@ -66,13 +66,11 @@ function testing(rec){
   const parsedNames = JSON.parse(recData.attendee_names)
   const parsedDuration = JSON.parse(recData.attendedDurationInSec)
   for(let ind = 0; parsedNames.length > ind; ind++ ){
-    let new_time = String(parsedDuration[ind]/60).split(".")
-    let create_tmt = `${new_time[0]} : ${new_time[1].slice(0,2)}`
     pop.innerHTML += `
       <tr>
           <td class="col-xs-3 profile-img"><img src="${recData.PROFILE_URLS[ind]}" class="img-fluid" /></td>
           <td class="col-xs-5">${parsedNames[ind]}</td>
-          <td class="col-xs-4">${create_tmt}</td>
+          <td class="col-xs-4">${convertSeconds(parsedDuration[ind])}</td>
         </tr>
       `
   }
@@ -80,6 +78,12 @@ function testing(rec){
 
 }
 
+function convertSeconds(seconds) {
+  var hours = Math.floor(seconds / 3600);
+  var minutes = Math.floor((seconds - (hours * 3600)) / 60);
+  var remainSeconds = seconds - (hours * 3600) - (minutes * 60);
+  return `${hours} : ${minutes} : ${remainSeconds}`;
+}
 
 function clearData(){
   close = document.getElementById("tb")
