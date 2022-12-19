@@ -17,10 +17,12 @@ const localRecords = JSON.parse(localStorage.getItem("Meraki_Attendance_Data"));
 const rev_record = localRecords.reverse()
 const tbody = document.getElementById("history");
 for (let record in rev_record) {
+  let dat = new Date(localRecords[record].meeting_time)
+  let meetDate = dat.toUTCString().slice(5,17)
   tbody.innerHTML += `
   <tr>
     <td>${localRecords[record].meeting_title}</td>
-    <td>${localRecords[record].meeting_time}</td>
+    <td>${meetDate}</td>
     <td>
   ${localRecords[record].meet_duration}
   </td>
